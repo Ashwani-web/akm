@@ -1,0 +1,258 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <style type="text/css">
+        body
+        {
+
+            background-color: #f5f5f6;
+            font: normal 12px/1.5 "Tahoma";
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            padding: 0;
+        }
+		p{margin:0 !important;
+		padding:5px 0}
+        .about_heading2
+        {
+            color: #444444;
+           
+            font-size: 12px;
+            font-style: normal;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        input.myButton, button.myButton
+        {
+            
+            
+            background-color: #008ec7;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+          
+			width: 100%;
+            font-size: 14px;
+            padding: 5px 5px;
+            text-decoration: none;
+			height: 35px;
+			border: 0;
+		}
+		
+		button.myButtonback
+        {
+            
+            
+            background-color: #ccc;
+            display: inline-block;
+            cursor: pointer;
+            color: #000;
+          
+			width: 100%;
+            font-size: 14px;
+            padding: 5px 5px;
+            text-decoration: none;
+			height: 35px;
+			border: 0;
+		}
+			
+           
+        }
+		
+		
+		
+    
+        input.myButton:active
+        {
+            position: relative;
+            top: 1px;
+        }
+        .Level_no
+        {
+           
+            font-size: 12px;
+            color: #f58221;
+            font-weight: bold;
+			padding:3px;
+			display:inline;
+			background-color:#2985c5;
+			color:#FFF;
+			
+        }
+        
+		.offline p
+		{padding:10px;}
+		
+		.offline strong{
+			font-weight:bold;
+			display:block;
+			margin-bottom:5px;
+		}
+		
+        .offline li
+        {
+            list-style-image: url(imgs/program_searc_list_style_red.png) !important;margin-bottom:15px;
+        }
+		.text-f{width: 100%; height: 38px; border: 1px #9d9d9d solid; padding-left: 5px;  box-sizing: border-box;  font-size: 14px; color: #8B8B8B;text-align: left;}
+		
+		.text-f-center{width: 100%; height: 38px; border: 1px #9d9d9d solid; padding-left: 5px;  box-sizing: border-box;  font-size: 14px; color: #8B8B8B;text-align: center;}
+		.clickhere
+        {
+            background-color: #b00324;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 3px 5px;
+            text-decoration: none;
+			margin-top: 10px;}
+			.invalid{
+				border-color:#cc0000;
+			}
+			
+			
+			
+			.card {
+			width: 300px;
+			margin: 0 auto;
+			-webkit-transition: -webkit-transform 1s;
+			-moz-transition: -moz-transform 1s;
+			-o-transition: -o-transform 1s;
+			transition: transform 1s;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-o-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			-webkit-transform-origin: 50% 50%;
+		}
+		.card .card1 {
+			display: block;
+			width: 100%;			
+			position: absolute;
+			 background: #ffffff; -webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(179,179,179,0.61);
+			-moz-box-shadow: 0px 0px 10px 0px rgba(179,179,179,0.61);
+			box-shadow: 0px 0px 10px 0px rgba(179,179,179,0.61);
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-o-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+		.card .back {
+			-webkit-transform: rotateY( 180deg );
+			-moz-transform: rotateY( 180deg );
+			-o-transform: rotateY( 180deg );
+			transform: rotateY( 180deg );
+		}
+		.card.flipped {
+			-webkit-transform: rotateY( 180deg );
+			-moz-transform: rotateY( 180deg );
+			-o-transform: rotateY( 180deg );
+			transform: rotateY( 180deg );
+		}
+		.swal2-icon.swal2-success .line.tip{
+			top:46px !important;
+		}
+    </style>
+	
+	
+	
+</head>
+<body>
+
+	
+   
+<div style="padding:15px 0px; text-align:center;"><img src="https://www.gdgoenkauniversity.com/wp-content/uploads/2017/01/gdgoenka.png" alt="logo" /></div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+ 			<div class="card">
+<div class="card1" style="">
+<div style="background: #008ec7; color: #ffffff; padding: 10px; text-align: center; font-size: 18px; font-family: 'Montserrat', sans-serif;">GET CALL BACK</div>
+			<div class="online" id="online">
+			<div style="padding: 10px;">
+			<p style="text-align: center; color: #727272; font-family: 'Montserrat', sans-serif; margin-bottom:10px;">
+			<span>Please enter your mobile number</span> </p>
+			<div style="text-align: center;">
+					<form id="callform">
+					<input type="text" required name="phone" class="text-f-center copyMe phoneonly" id="phone" style="margin-bottom:10px;" />
+					
+					<input type="button" id="btnSub" class="myButton" value="Get Call">
+				</form>
+			</div>
+			<p style="text-align:center">
+			OR
+			</p>
+			<p>
+				<button onclick="flip()"  class="myButton">Schedule a Call</button>
+			</p>
+			<p>
+			<small id="textline" style="display:none;text-align:center;width:100%">(This window will close automatically after the call is over)<br></small>
+				<p runat="server" id="callcounseller" style="text-align: center; color: #727272; font-family: 'Montserrat', sans-serif; line-height: 22px">You would get call from number starting with +911824 shortly, kindly wait for few seconds after accepting the call to talk to our counsellor.</p>
+			</div>
+			<div style="background: #f2f2f2; padding: 10px; color: #004b82; font-size: 11px; text-align: center; font-weight: bold;">Counsellors available from 9.00 A.M to 5.00 P.M</div>
+			</div>
+			  </div>
+			  <div class="back card1">
+		<div style="background: #008ec7; color: #ffffff; padding: 10px; text-align: center; font-size: 18px; font-family: 'Montserrat', sans-serif;">SCHEDULE A CALL</div>
+		
+		<div style="text-align: center;padding:10px">
+		<form id="scheduleform">
+		<p style="text-align: left; color: #727272; font-family: 'Montserrat', sans-serif; margin-bottom:10px;">
+			<span>Please enter your name</span> </p>
+				<input type="text" class="text-f" style="margin-bottom:10px;" />	
+					<p style="text-align: left; color: #727272; font-family: 'Montserrat', sans-serif; margin-bottom:10px;">
+			<span>Please enter your mobile number</span> </p>
+				<input type='text' class="text-f copyMe phoneonly" style="margin-bottom:10px;" />	
+					<p style="text-align: left; color: #727272; font-family: 'Montserrat', sans-serif; margin-bottom:10px;">
+			<span>Programme Interested</span> </p>
+				<input type='text' class="text-f" style="margin-bottom:10px;" />	
+				<p style="text-align: left; color: #727272; font-family: 'Montserrat', sans-serif; margin-bottom:10px;">
+			<span>Please Select Date</span> </p>
+				<input type='date' class="text-f" style="margin-bottom:10px;" />
+			<p style="text-align: left; color: #727272; font-family: 'Montserrat', sans-serif; margin-bottom:10px;">
+			<span>Please Select Time</span> </p>
+				<input type='text' class="text-f" style="margin-bottom:10px;" />	
+				
+				<input type='button' class="myButton" value="Schedule call" style="margin-bottom:10px;" />
+				
+			
+		</form>
+		
+		
+		
+		<p>
+				<button onclick="flip()"  class="myButtonback">BACK</button>
+			</p>
+			</div>
+	</div>
+	
+	
+
+		 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+				   function flip() {
+				$('.card').toggleClass('flipped');
+			}
+	</script>
+	
+		
+  
+</body>
+</html>
